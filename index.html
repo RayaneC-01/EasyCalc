@@ -1,9 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculatrice Simple HTML/CSS/JS</title>
+    <title>Calculatrice Simple</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="calculator">
+      <!-- Ajoutez une étiquette pour l'affichage -->
+      <label for="display">Résultat :</label>
+      <input
+        type="text"
+        id="display"
+        readonly
+        placeholder="0"
+        aria-label="Résultat"
+      />
+
+      <div class="keys">
+        <button class="operator" onclick="clearDisplay()" aria-label="Effacer">
+          C
+        </button>
+        <button
+          class="operator"
+          onclick="deletePreviousCharacter()"
+          aria-label="Supprimer un caractère"
+        >
+          &larr;
+        </button>
+        <button
+          class="operator"
+          onclick="appendToDisplay('%')"
+          aria-label="Pourcentage"
+        >
+          %
+        </button>
+        <button
+          class="operator"
+          onclick="appendToDisplay('/')"
+          aria-label="Diviser"
+        >
+          ÷
+        </button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button
+          class="operator"
+          onclick="appendToDisplay('*')"
+          aria-label="multiplier"
+        >
+          x
+        </button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button
+          class="operator"
+          onclick="appendToDisplay('-')"
+          aria-label="Soustraire"
+        >
+          -
+        </button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button
+          class="operator"
+          onclick="appendToDisplay('+')"
+          aria-label="Additionner"
+        >
+          +
+        </button>
+        <button onclick="appendToDisplay('0')" style="grid-column: span 2">
+          0
+        </button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
