@@ -25,4 +25,4 @@ git clone https://github.com/RayaneC-01/EasyCalc.git
 
 ## Auteur
 
-Ce projet a été réalisé par [Rayane].
+Ce projet a été réalisé par [https://github.com/RayaneC-01/].
