@@ -20,7 +20,7 @@
 
       <div class="keys">
         <button class="operator" onclick="clearDisplay()" aria-label="Effacer">
-          C
+          AC
         </button>
         <button
           class="operator"
@@ -73,16 +73,19 @@
         >
           +
         </button>
-        <button onclick="appendToDisplay('0')">0</button>
+        <button style="grid-column: span 2" onclick="appendToDisplay('0')">
+          0
+        </button>
+        <button onclick="appendToDisplay(',')">,</button>
+        <button onclick="calculateResult()">=</button>
+
         <button onclick="appendToDisplay('00')">00</button>
-        <button onclick="appendToDisplay('.')">.</button>
         <button onclick="appendToDisplay('(')" aria-label="Ouvrir parenthèse">
           (
         </button>
         <button onclick="appendToDisplay(')')" aria-label="Fermer parenthèse">
           )
         </button>
-        <button onclick="calculateResult()">=</button>
       </div>
     </div>
     <script src="script.js"></script>
