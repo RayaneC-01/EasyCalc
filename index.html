@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculatrice Simple</title>
+    <title>Calculatrice Simple HTML/CSS/JS</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -76,6 +76,12 @@
         <button onclick="appendToDisplay('0')">0</button>
         <button onclick="appendToDisplay('00')">00</button>
         <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('(')" aria-label="Ouvrir parenthèse">
+          (
+        </button>
+        <button onclick="appendToDisplay(')')" aria-label="Fermer parenthèse">
+          )
+        </button>
         <button onclick="calculateResult()">=</button>
       </div>
     </div>
